@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashbord tools kennzy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #13151a;
+            color: #e4e6eb;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+
+        header p {
+            font-size: 0.95em;
+            color: #8b8d94;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 16px;
+        }
+
+        .tool-card {
+            background: #1c1e24;
+            border: 1px solid #2a2d35;
+            border-radius: 10px;
+            padding: 24px 16px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .tool-card:hover {
+            background: #23252b;
+            border-color: #3a3d45;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .tool-icon {
+            font-size: 2.2em;
+            margin-bottom: 12px;
+            filter: grayscale(0.2);
+        }
+
+        .tool-title {
+            font-size: 0.88em;
+            color: #e4e6eb;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px 20px;
+            margin-top: 60px;
+            color: #5a5d66;
+            font-size: 0.85em;
+        }
+
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 14px;
+            }
+
+            header h1 {
+                font-size: 1.7em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tools Kennzy</h1>
+            <p>All Tools Free & No Limit</p>
+        </header>
+        
+        <div class="tools-grid">
+            <a href="https://enc-code-html.vercel.app/" target="_blank" class="tool-card">
+                <div class="tool-icon">🔐</div>
+                <div class="tool-title">Enc Code HTML</div>
+            </a>
+
+            <a href="https://get-code-website.vercel.app/" target="_blank" class="tool-card">
+                <div class="tool-icon">💻</div>
+                <div class="tool-title">Get Code Website</div>
+            </a>
+
+            <a href="https://tools-remove-backgroud.vercel.app/" target="_blank" class="tool-card">
+                <div class="tool-icon">🖼️</div>
+                <div class="tool-title">Remove Background</div>
+            </a>
+
+            <a href="https://tracking-nine-jet.vercel.app/" target="_blank" class="tool-card">
+                <div class="tool-icon">📍</div>
+                <div class="tool-title">Tracking IP/Number</div>
+            </a>
+
+            <a href="https://wink-unlimited.vercel.app/" target="_blank" class="tool-card">
+                <div class="tool-icon">✨</div>
+                <div class="tool-title">Wink Unlimited</div>
+            </a>
+        </div>
+
+        <footer>
+            <p>&copy; kennzy tools</p>
+        </footer>
+    </div>
+</body>
+</html>
